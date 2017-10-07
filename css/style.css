@@ -7,13 +7,13 @@ body {
     color: #5e5e5e;
 }
 
-a {
+.twitter a {
 	text-decoration: none;
-	color: #606060;
+	color: #55acee;
 }
 
-a:hover{
-	color: #c0c0c0;
+.twitter a:hover{
+	color: #3350e0;
 }
 
 svg {
@@ -21,15 +21,18 @@ svg {
 }
 
 .p_img_box {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 /* ---------- header ---------- */
 
-/*
+
 header {
-    background: #004A7C;
+    background: #fff;
+	height: 50px;
 }
+
+/*
 
 h1 {
     color: #FFFFFF;
@@ -58,7 +61,7 @@ section:nth-child(odd) {
 }
 */
 section {
-    padding: 100px;
+    padding: 50 100px;
 	text-align: center;
 }
 
@@ -122,7 +125,6 @@ ul.work_row {
 .cd_pic {
 	width: 270px;
 	height: 270px;
-	border-radius: 10%;
 	margin: 60px 20px;
 	padding: 0;
 	overflow: hidden;
@@ -137,7 +139,7 @@ ul.work_row {
 }
 	
 .cd_pic:hover img{
-	transform: scale(1.2);
+	transform: scale(1.3);
 }
 
 footer {
