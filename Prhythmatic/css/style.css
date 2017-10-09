@@ -1224,7 +1224,6 @@ figure {
 }
 
 .btn {
-  text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1564,20 +1563,28 @@ figure {
 	margin: 0;
 }
 
+.space-block {
+	height: 30px;
+}
+
 .credit span {
 	display: block;
-	font-size: 130%;
+	font-size: 1.2em;
 }
 
 .credit .role {
 	color: rgba(255, 255, 255, 0.5);
-	font-size: 70%;
+	font-size: 0.9em;
 }
 
 .credit a {
 	color: #fff;
-	font-size: 20%;
+	font-size: 0.9em;
     padding: 2px 10px;
     border: 1px solid #fff;
 	border-radius: 3px;
+}
+
+.creator {
+	margin-bottom: 20px;
 }
