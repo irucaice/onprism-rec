@@ -1588,3 +1588,20 @@ figure {
 .creator {
 	margin-bottom: 20px;
 }
+
+/* Lyrics - オリジナル追加css */
+dl {
+	border-bottom: 1px solid #fff;
+}
+
+div.lyrics {
+	background:radial-gradient(rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+div.title-logo-lyrics img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	margin-bottom: 70px;
+}
