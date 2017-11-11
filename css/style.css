@@ -31,6 +31,10 @@ svg {
 	width:60%
 }
 
+.title_logo {
+	margin-bottom: 50px;
+}
+
 .playbutton-wrapper button {
     height: 34px;
     padding: 0 10px;
