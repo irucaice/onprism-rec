@@ -5,6 +5,20 @@ body {
     background-color:#FFF;
     font-family: "メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック",Osaka,arial,verdana,sans-serif;
     color: #5e5e5e;
+	min-height: 418px;
+    -webkit-box-shadow: 0 0 13px rgba(4,0,0,.67);
+    background-image:
+        -webkit-linear-gradient(
+            transparent 98%,
+            rgba(180, 180, 180, .2) 50%,
+            rgba(180, 180, 180, .2)),
+        -webkit-linear-gradient(
+            0deg, transparent 98%,
+            rgba(180, 180, 180, .2) 50%,
+            rgba(180, 180, 180, .2)
+            );
+    background-size: 50px 50px;
+    background-repeat: repeat;
 }
 
 p {
@@ -15,7 +29,7 @@ p {
 
 /* ---------- header ---------- */
 header {
-    background: #fff;
+/*    background: #fff;*/
 	height: 50px;
 }
 
