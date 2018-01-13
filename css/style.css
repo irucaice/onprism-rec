@@ -194,16 +194,16 @@ li.tns-item {
 
 
 /* ---------- SNS ---------- */
-.sns-box i {
+.sns i {
 	color: #66CCFF;
 	transition: color 0.3s ease 0s;
 }
 
-.sns-box i:hover{
+.sns i:hover{
 	color: #55acee;
 }
 
-.sns-box a {
+a.sns  {
 	text-decoration: none;
 	margin: 0 10px;
 }
@@ -231,25 +231,10 @@ li.tns-item {
 	text-align: left;
 }
 
-/*
-ul.my_link a {
-	font-weight: bold;
+/* ---------- about ---------- */
+.name {
+	margin-top: 33px;
 }
-
-div.p_img_box {
-	text-align: left;
-}
-
-p {
-}
-
-#about p.caption {
-    margin: 0;
-}
-
-i.fa {
-	margin: 20px;
-}*/
 
 /* ---------- release ---------- */
 .discography_box>div {
