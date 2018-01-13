@@ -39,7 +39,11 @@ p {
 	letter-spacing: 0.15em;
 }
 
-/* ---------- header ---------- */
+div.body-content {
+	margin-bottom: 40px;
+}
+
+/* ---------- navbar ---------- */
 nav {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -48,7 +52,7 @@ nav {
 /*ボーダーグラデーション*/
 nav:after {
 	content:"";
-	height:1px;
+	height:2px;
 	width:100%;
 		background:-webkit-gradient(linear, left top, right bottom, from(#1fa2ff), to(#a6ffcb));
 		background:-moz-linear-gradient(left, #1fa2ff, #a6ffcb);
@@ -56,22 +60,67 @@ nav:after {
 }
 
 .navbar-header {
-    width: 100px;
     height: 40px;
 	margin: 5px 50px;
 }
 
 .navbar-header a {
-	background-size: 50%;
-    width: 100%;
-    height: 100%;
+    width: 50px;
     background-image: url(../img/logo_mark_w.png);
+	background-size:contain;
     background-repeat: no-repeat;
 }
 
-.navbar-nav > li > a {
+.opr-nav .navbar-toggle {
+}
+.opr-nav .navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.opr-nav .navbar-nav>li>a {
 	color: #fff;
 }
+
+.opr-nav .navbar-nav>li>a:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: background-color 0.2s ease 0s;
+}
+
+/*ハンバーガーボタンアニメーション*/
+/*
+.opr-nav button span {
+	display: inline-block;
+	transition: all .4s;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #fff;
+}
+
+.opr-nav button span:nth-of-type(2) {
+ 	top: 0;
+}
+.opr-nav button span:nth-of-type(3) {
+ 	top: 10px;
+}
+.opr-nav button span:nth-of-type(4) {
+ 	bottom: 0;
+}
+.opr-nav button[aria-expanded="true"] span:nth-of-type(2) {
+	-webkit-transform: translateY(20px) rotate(-45deg);
+	transform: translateY(20px) rotate(-45deg);
+}
+.opr-nav button[aria-expanded="true"] span:nth-of-type(3) {
+ 	opacity: 0;
+}
+.opr-nav button[aria-expanded="true"] span:nth-of-type(4) {
+	-webkit-transform: translateY(-20px) rotate(45deg);
+transform: translateY(-20px) rotate(45deg);
+}
+*/
+
+/* ---------- content_box ---------- */
 
 div.content_box {
     width: 800px;
@@ -85,7 +134,6 @@ svg {
 
 .title_logo {
 	margin-top: 90px;
-	margin-bottom: 50px;
 }
 
 .playbutton-wrapper button {
@@ -106,7 +154,6 @@ svg {
 
 /* ---------- slider ---------- */
 #slider {
-	margin-bottom: 36px;
 }
 
 li.tns-item {
@@ -147,10 +194,6 @@ li.tns-item {
 
 
 /* ---------- SNS ---------- */
-div.content-box {
-	padding: 20px;
-}
-
 .sns-box i {
 	color: #66CCFF;
 	transition: color 0.3s ease 0s;
@@ -165,13 +208,27 @@ div.content-box {
 	margin: 0 10px;
 }
 
-/* ---------- About ---------- */
+/* ---------- News ---------- */
 .head {
 	font-size: 30px;
 	font-weight: 200;
     line-height: 1.231;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
+}
+
+.head:after {
+	content:"";
+	height:2px;
+	width:100%;
+	display: block;
+		background:-webkit-gradient(linear, left top, right bottom, from(#1fa2ff), to(#a6ffcb));
+		background:-moz-linear-gradient(left, #1fa2ff, #a6ffcb);
+		background:linear-gradient(left, #1fa2ff, #a6ffcb);
+}
+
+.news, .about {
+	text-align: left;
 }
 
 /*
@@ -194,14 +251,23 @@ i.fa {
 	margin: 20px;
 }*/
 
-/* ---------- #Work ---------- */
-
-/*.content_box {
-	text-align: left;
+/* ---------- release ---------- */
+.discography_box>div {
+	margin-bottom: 20px;
+}
+.discography_box>div>.art_box {
+	box-shadow: 5px 8px 40px #999;
+	overflow: hidden;
+}
+.discography_box>div img{
+	transition: 0.3s ease-in-out;
+}
+	
+.discography_box>div:hover img{
+	transform: scale(1.1);
 }
 
-*/
-
+/* ---------- footer ---------- */
 footer {
     color: #fff;
     background: #e0e0e0;
