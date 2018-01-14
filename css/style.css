@@ -232,10 +232,43 @@ a.sns  {
 }
 
 /* ---------- about ---------- */
-.name {
-	margin-top: 33px;
+.members .head:after {
+	margin-bottom: 40px;
 }
-
+.member_name {
+	margin-top: 16px;
+	font-size: 20px;
+	font-weight: 200;
+    line-height: 1.231;
+}
+.member_name:after {
+	content:"";
+	height:1px;
+	width:100%;
+	margin-bottom: 10px;
+	display: block;
+}
+.jisyo .member_name:after {
+		background:-webkit-gradient(linear, left top, right bottom, from(#ec008c), to(#fc6767));
+		background:-moz-linear-gradient(left, #ec008c, #fc6767);
+		background:linear-gradient(left, #ec008c, #fc6767);
+}
+.irucaice .member_name:after {
+		background:-webkit-gradient(linear, left top, right bottom, from(#6A80ff), to(#86fde8));
+		background:-moz-linear-gradient(left, #6A80ff, #86fde8);
+		background:linear-gradient(left, #6A80ff, #86fde8);
+}
+.shuto .member_name:after {
+		background:-webkit-gradient(linear, left top, right bottom, from(#12d8fa), to(#ff008c));
+		background:-moz-linear-gradient(left, #ec008c, #fc6767);
+		background:linear-gradient(left, #ec008c, #fc6767);
+}
+.member_job {
+	margin-bottom: 10px;
+}
+.member_icon {
+	box-shadow: 3px 3px 20px #999;
+}
 /* ---------- release ---------- */
 .discography_box>div {
 	margin-bottom: 20px;
