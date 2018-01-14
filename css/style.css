@@ -194,20 +194,24 @@ li.tns-item {
 
 
 /* ---------- SNS ---------- */
-.sns i {
-	color: #66CCFF;
-	transition: color 0.3s ease 0s;
-}
-
-.sns i:hover{
-	color: #55acee;
-}
-
 a.sns  {
 	text-decoration: none;
 	margin: 0 10px;
 }
-
+.sns>.fa-twitter {
+	color: #66CCFF;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-twitter:hover{
+	color: #55acee;
+}
+.sns>.fa-youtube {
+	color: #e52d27;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-youtube:hover{
+	color: #901010;
+}
 /* ---------- News ---------- */
 .head {
 	font-size: 30px;
@@ -266,7 +270,15 @@ a.sns  {
 .member_job {
 	margin-bottom: 10px;
 }
+.sns>.fa-home {
+	color: #606c88;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-home:hover{
+	color: #3f4c6b;
+}
 .member_icon {
+	width: 100%;
 	box-shadow: 3px 3px 20px #999;
 }
 /* ---------- release ---------- */
