@@ -15,33 +15,5 @@ var slider = tns({
   	},
 	mouseDrag: true,
 	navContainer: '#customize-thumbnails',
-	controls: false,
-//	autoplay: true,
-//	autoplayTimeout: 5000,
-//	autoplayButton: '#customize-toggle',
-//	autoplayText: ['▶','❚❚']
+	controls: false
   });
-
-// Loading画面をウィンドウの高さを指定して表示させる
-$(function() {
-	var h = $(window).height();
-	$('#mainWrap').css('display','none');
-	$('.animationload').height(h).css('display','block');
-});
- 
-$(window).load(function () { //全ての読み込みが完了したら実行
-	$('#loadering').delay(700).fadeOut(600);
-	$('.animationload').delay(400).fadeOut(300);
-	$('#mainWrap').css('display', 'block');
-});
- 
-//10秒たったら強制的にロード画面を非表示
-$(function(){
-	setTimeout('stopload()',10000);
-});
- 
-function stopload(){
-	$('#wrap').css('display','block');
-	$('#loader-bg').delay(900).fadeOut(800);
-	$('#loader').delay(600).fadeOut(300);
-}
