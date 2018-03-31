@@ -15,11 +15,7 @@ var slider = tns({
   	},
 	mouseDrag: true,
 	navContainer: '#customize-thumbnails',
-	controls: false,
-//	autoplay: true,
-//	autoplayTimeout: 5000,
-//	autoplayButton: '#customize-toggle',
-//	autoplayText: ['▶','❚❚']
+	controls: false
   });
 
 // Loading画面をウィンドウの高さを指定して表示させる
