@@ -1563,6 +1563,10 @@ figure {
     opacity: 1;
 }
 
+.contents-info {
+	background: rgba(0, 0, 0, 0.7);
+}
+
 .alpha-box {
 	background: rgba(0, 0, 0, 0.3);
     padding: 20px;
