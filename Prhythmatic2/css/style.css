@@ -14,6 +14,9 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 	background:none;
+/*	オリジナル*/
+	line-height: 1.7;
+    letter-spacing: 0.15em;
 }
 
 body::before {
@@ -22,11 +25,12 @@ body::before {
 	position:fixed;
 	top:0;
 	left:0;
-	z-index:-1;
+	z-index:-5;
 	width:100%;
 	height:100vh;
-	background:url("../img/main.png") center/cover no-repeat; /*fixedをトル！*/
-	-webkit-background-size:cover;/*Android4*/
+	background:url("../img/back-square.png") center/cover no-repeat; /*fixedをトル！*/
+	/*Android4*/
+	-webkit-background-size : contain;
 }
 
 body.fh5co-offcanvas {
@@ -204,52 +208,45 @@ figure {
     padding: 3em 0;
   }
 }
-.fh5co-cover .desc {
-  top: 40%;
-  position: absolute;
-  width: 100%;
-  margin-top: -80px;
-  z-index: 2;
-  color: #fff;
-}
+
 @media screen and (max-width: 768px) {
-  .fh5co-cover .desc {
+  .fh5co-cover {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
-.fh5co-cover .desc h2 {
+.fh5co-cover h2 {
   color: #fff;
   font-size: 60px;
   margin-bottom: 10px;
   font-weight: 300 !important;
 }
-.fh5co-cover .desc h2 strong {
+.fh5co-cover h2 strong {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-cover .desc h2 {
+  .fh5co-cover h2 {
     font-size: 40px;
   }
 }
-.fh5co-cover .desc p {
+.fh5co-cover p {
   display: block;
   margin-bottom: 30px;
   font-size: 16px;
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.5);
 }
-.fh5co-cover .desc p a {
+.fh5co-cover p a {
   color: #fff;
 }
-.fh5co-cover .desc p a:hover, .fh5co-cover .desc p a:focus {
+.fh5co-cover .top p a:hover, .fh5co-cover p a:focus {
   color: #fff !important;
 }
-.fh5co-cover .desc p a:hover.btn, .fh5co-cover .desc p a:focus.btn {
+.fh5co-cover p a:hover.btn, .fh5co-cover p a:focus.btn {
   border: 2px solid #fff !important;
   background: transparent !important;
 }
-.fh5co-cover .desc p a.fh5co-site-name {
+.fh5co-cover p a.fh5co-site-name {
   padding-bottom: 2px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
 }
@@ -1161,14 +1158,15 @@ figure {
   }
 }
 
-.fh5co-social-icons > a {
-  padding: 4px 10px;
-  color: #55bbff;
+.social-icons > a {
+	color: #55bbff;
+ 	padding: 4px 10px;
 }
-.fh5co-social-icons > a i {
-  font-size: 26px;
+.social-icons i {
+	color: #55bbff;
+ 	font-size: 26px;
 }
-.fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
+.social-icons > a:hover, .fh5co-social-icons > a:focus, .social-icons > a:active {
   text-decoration: none;
   color: #5a5a5a;
 }
@@ -1525,46 +1523,85 @@ figure {
 
 /*# sourceMappingURL=style.css.map */
 
-
-
 /* オリジナル追加css */
+
+.m-bottom {
+	margin-bottom: 80px;
+}
 
 .contents-top {
     width: 100%;
     height: 100%;
 	min-width: 1000px;
     min-height: 1000px;
+	position: relative;
 }
 
 .top-logo {
-	width: 1250px;
-	height: 200px;
+	width:50%;
+	height:100vh;
     margin: 0 auto;
-    left: 450px;
-    right: 0;
-    top: 550px;
+    left: 550px;
+    top: 450px;
     background: url(../img/top_logo.png) no-repeat;
+	background-size: contain;
+	-webkit-filter: drop-shadow(0 0 3px #ffffff);
     display: block;
     position: fixed;
-    z-index: 2;
-    transform: rotate( -0.5deg );
+    z-index: -1;
 }
 
 .top-miku {
-    width: 1500px;
-    height: 1000px;
+	width:100%;
+	height:100vh;
     margin: 0 auto;
-    left: -40px;
-    right: 0;
+    left: 0;
     background: url(../img/top_miku.png) no-repeat;
+	background-size: contain;
+	-webkit-filter: drop-shadow(3px 4px 1px rgb(0, 0, 0, 0.5));
     display: block;
     position: fixed;
-    z-index: 0;
-    opacity: 1;
+    z-index: -2;
 }
 
 .contents-info {
+    width: 100%;
 	background: rgba(0, 0, 0, 0.7);
+	z-index: 5;
+}
+
+.info-cd {
+	height: 100%;
+	margin-top: 100px;
+	padding: 50px;
+	position: relative;
+}
+
+.info-cd:before {
+	position: absolute;
+	top: -1px;
+	left: -10px;
+	border: 1px solid #ffffff;
+	width: calc(100% + 18px);
+	height: 100%;
+	content: "";
+	}
+
+.info-cd:after {
+	position: absolute;
+	top: -10px;
+	left: -1px;
+	border: 1px solid #ffffff;
+	width: 100%;
+	height: calc(100% + 18px);
+	content: "";
+}
+
+.contents-track {
+	width: 100%;
+	height: 600px;
+	background: linear-gradient(to left, rgb(31, 162, 255), rgba(18, 216, 250, 0.9) 70%, rgb(166, 255, 253));
+	z-index: 5;
 }
 
 .alpha-box {
