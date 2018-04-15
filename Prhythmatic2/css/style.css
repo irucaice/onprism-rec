@@ -81,12 +81,6 @@ figure {
   background: #55bbff;
 }
 
-#fh5co-header {
-  position: relative;
-  margin-bottom: 0;
-  z-index: 9999999;
-}
-
 .stuck {
   position: fixed !important;
   top: 0 !important;
@@ -97,19 +91,15 @@ figure {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-.header-top {
-  padding: 10px 0;
-  background: #55bbff;
-}
-.header-top .fh5co-link a {
+.fh5co-link a {
   margin-left: 10px;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.7);
 }
-.header-top .fh5co-link a:first-child {
+.fh5co-link a:first-child {
   margin-left: 0;
 }
-.header-top .fh5co-link a:hover {
+.fh5co-link a:hover {
   color: white !important;
 }
 @media screen and (max-width: 768px) {
@@ -117,7 +107,7 @@ figure {
     text-align: center;
   }
 }
-.header-top .fh5co-social a {
+.fh5co-social a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   margin-right: 15px;
@@ -126,14 +116,14 @@ figure {
   -o-transition: 0.5s, ease-in-out;
   transition: 0.5s, ease-in-out;
 }
-.header-top .fh5co-social a:last-child {
+.fh5co-social a:last-child {
   margin-right: 0;
 }
-.header-top .fh5co-social a:hover, .header-top .fh5co-social a:focus, .header-top .fh5co-social a:active {
+.fh5co-social a:hover, .header-top .fh5co-social a:focus, .header-top .fh5co-social a:active {
   text-decoration: none;
   color: white !important;
 }
-.header-top .fh5co-social a:hover i, .header-top .fh5co-social a:focus i, .header-top .fh5co-social a:active i {
+.fh5co-social a:hover i, .header-top .fh5co-social a:focus i, .header-top .fh5co-social a:active i {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -356,15 +346,6 @@ figure {
   border-left-color: #ccc;
 }
 
-#fh5co-header-section {
-  padding: 0;
-  position: relative;
-  left: 0;
-  width: 100%;
-  z-index: 1022;
-  background: rgba(255, 255, 255, 0.3);
-}
-
 .nav-header {
   position: relative;
   float: left;
@@ -572,34 +553,6 @@ figure {
     padding: 4em 0;
   }
 }
-
-.fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
-}
-
-.heading-section {
-  padding-bottom: 1em;
-  margin-bottom: 5em;
-}
-.heading-section:after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 50%;
-  width: 100px;
-  margin-left: -50px;
-  height: 2px;
-  background: #55bbff;
-}
-.heading-section h3 {
-  font-size: 40px;
-  font-weight: 300;
-  position: relative;
-}
-.heading-section p {
-  font-size: 20px;
-}
-
 .feature-text h3 {
   font-size: 16px;
   margin-bottom: 10px;
@@ -1489,7 +1442,7 @@ figure {
 	width:50%;
 	height:100vh;
     margin: 0 auto;
-    left: 550px;
+    left: 400px;
     top: 450px;
     background: url(../img/top_logo.png) no-repeat;
 	background-size: contain;
@@ -1514,22 +1467,50 @@ figure {
     z-index: -2;
 }
 
+#header-section {
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0;
+	position: relative;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/*
+#fh5co-header {
+  position: relative;
+  margin-bottom: 0;
+  z-index: 9999999;
+}
+*/
+
+/*
+.header-top {
+  padding: 10px 0;
+  background: #55bbff;
+}
+*/
+
+.contents-section {
+	padding: 50px;
+}
+
 .contents-info {
     width: 100%;
-/*	background: linear-gradient(to left, rgb(31, 162, 255), rgba(18, 216, 250, 0.9) 70%, rgb(166, 255, 253));*/
 	background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	background-color: rgba(18, 216, 250, 0.9);
+/*	background-color: rgba(18, 216, 250, 0.9);*/
+	background-color: rgba(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
 }
 
 .info-cd {
 	height: 100%;
-	margin-top: 100px;
 	padding: 50px;
+	margin: 20px 0;
 	position: relative;
 }
 
@@ -1553,11 +1534,65 @@ figure {
 	content: "";
 }
 
+.contents-track h4 {
+	color: rgb(70, 70, 70, 0.6);
+}
+
 .contents-track {
 	width: 100%;
-	height: 600px;
 	color: rgb(70, 70, 70);
 	background-color: rgb(255, 255, 255, 0.5);
+	z-index: 5;
+}
+
+.contents-track ul {
+	margin: 0 100px;
+}
+
+.contents-track li {
+	width: calc(100% - 109px);
+	margin-bottom: 12px;
+	padding: 0.6em 1.0em;
+	text-align: left;
+	list-style: none;
+	box-shadow: 4px 4px 1px rgba(0,0,0,0.4);
+}
+
+.contents-track li span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 14%;
+}
+
+.contents-track li span:last-child {
+	margin-right: 0;
+}
+
+.contents-track .track-num, .track-author {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.contents-track .track-author {
+	font-size: 0.75em;
+}
+
+.contents-track li:nth-child(odd) {	
+	background-color: rgb(18, 216, 255, 0.8);
+}
+
+.contents-track li:nth-child(even) {
+	background-color: rgb(0, 159, 255, 0.8);
+	margin-left: 62px;
+}
+
+.contents-share {
+	width: 100%;
+	background: url(../img/top_miku.png) no-repeat;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-color: rgb(255, 140, 230);
+	background-blend-mode: multiply;
 	z-index: 5;
 }
 
@@ -1585,32 +1620,80 @@ figure {
 	height: 30px;
 }
 
-.credit span {
+.contents-store {
+    width: 100%;
+    color: rgb(70, 70, 70);
+    background-color: rgb(255, 255, 255, 0.5);
+	z-index: 5;
+}
+
+/* credit */
+.contents-section .head p:after, .credit-wrap:after {
+	content:"";
+	height:2px;
+	width:100%;
 	display: block;
-	font-size: 1.2em;
+	background: rgb(255, 255, 255, 0.8);
 }
 
-.credit .role {
-	color: rgba(255, 255, 255, 0.5);
-	font-size: 0.9em;
+.contents-credit {
+    width: 100%;
+	background: url(../img/top_miku.png) no-repeat;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-color: rgba(0, 159, 255);
+	background-blend-mode: multiply;
+	z-index: 5;
 }
 
-.credit a {
+.credit-wrap > div {
+	margin: 0 auto;
+	display: flex;
+}
+
+.credit-wrap > .credit-music, .credit-wrap > .credit-movie {
+	width: 175px;
+}
+.credit-wrap > .credit-design {
+	width: 300px;
+}
+.credit-wrap > .credit-illust {
+	width: 335px;
+}
+
+.credit-wrap ul {
+	padding: 0;
+}
+
+.credit-wrap li {
+    list-style: none;
+}
+
+.credit-wrap > .credit-role > div:first-child {
+    margin-right: 30px;
+}
+
+.credit-wrap > .credit-role > div:first-child p {
+    text-align: right;
+}
+
+.credit-wrap > .credit-role > div:last-child li {
+    text-align: left;
+}
+
+.credit-wrap a {
 	color: #fff;
 	font-size: 0.9em;
     padding: 2px 10px;
-    border: 1px solid #fff;
-	border-radius: 3px;
 }
 
-.creator {
-	margin-bottom: 20px;
+.credit-wrap a:hover {
+	color: rgba(255, 255, 255, 0.5);
+	transition: 0.2s;
 }
 
 /* Lyrics - オリジナル追加css */
-header {
-	z-index: 20;
-}
 
 dl {
 	border-bottom: 1px solid #fff;
