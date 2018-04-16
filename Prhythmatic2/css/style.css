@@ -285,21 +285,6 @@ figure {
   background: transparent;
 }
 
-.sf-menu ul li a,
-.sf-menu ul ul li a {
-  text-transform: none;
-  padding: 0.2em 1em !important;
-  letter-spacing: 1px;
-  font-size: 14px !important;
-}
-
-.sf-menu li:hover a,
-.sf-menu li.sfHover a,
-.sf-menu ul li:hover a,
-.sf-menu ul li.sfHover a,
-.sf-menu li.active a {
-  color: rgba(0, 0, 0, 0.3);
-}
 
 .sf-menu ul li:hover,
 .sf-menu ul li.sfHover {
@@ -393,26 +378,12 @@ figure {
     text-align: center;
   }
 }
-#fh5co-logo a {
-  color: rgba(0, 0, 0, 0.3);
-}
-#fh5co-logo a:hover, #fh5co-logo a:focus {
-  color: rgba(0, 0, 0, 0.1) !important;
-}
-
 #fh5co-menu-wrap {
   position: relative;
   z-index: 2;
   display: block;
   float: right;
   margin-top: 15px;
-}
-#fh5co-menu-wrap .sf-menu a {
-  padding: 1em .75em;
-}
-
-#fh5co-primary-menu > li > ul li.active > a {
-  color: #55bbff !important;
 }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
@@ -522,15 +493,6 @@ figure {
   display: none;
 }
 
-#fh5co-primary-menu .fh5co-sub-menu a {
-  letter-spacing: 0;
-  padding: 0 15px;
-  font-size: 18px;
-  line-height: 34px;
-  color: #575757 !important;
-  text-transform: none;
-  background: none;
-}
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
   color: #55bbff !important;
 }
@@ -702,18 +664,6 @@ figure {
   float: left;
   clear: left;
   position: relative;
-}
-@media screen and (max-width: 480px) {
-  #fh5co-portfolio-list li {
-    margin-left: 0;
-  }
-}
-#fh5co-portfolio-list li a {
-  min-height: 400px;
-  padding: 2em;
-  position: relative;
-  width: 100%;
-  display: block;
 }
 #fh5co-portfolio-list li a:before {
   position: absolute;
@@ -913,52 +863,6 @@ figure {
   }
 }
 
-#fh5co-contact .contact-info {
-  margin: 0;
-  padding: 0;
-}
-#fh5co-contact .contact-info li {
-  list-style: none;
-  margin: 0 0 20px 0;
-  position: relative;
-  padding-left: 40px;
-}
-#fh5co-contact .contact-info li i {
-  position: absolute;
-  top: .3em;
-  left: 0;
-  font-size: 22px;
-  color: rgba(0, 0, 0, 0.3);
-}
-#fh5co-contact .contact-info li a {
-  font-weight: 400 !important;
-  color: rgba(0, 0, 0, 0.3);
-}
-#fh5co-contact .form-control {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 18px;
-  font-weight: 400;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  border-radius: 0px;
-}
-#fh5co-contact .form-control:focus, #fh5co-contact .form-control:active {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-}
-#fh5co-contact input[type="text"] {
-  height: 50px;
-}
-#fh5co-contact .form-group {
-  margin-bottom: 30px;
-}
-
 .fh5co-testimonial, .fh5co-team {
   position: relative;
   background: #fff;
@@ -1077,9 +981,6 @@ figure {
   font-weight: 300;
   line-height: 1.5;
 }
-.fh5co-blog .blog-text h3 a {
-  color: rgba(0, 0, 0, 0.6);
-}
 
 #fh5co-start-project-section {
   padding: 7em 0;
@@ -1164,63 +1065,6 @@ figure {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-}
-.fh5co-offcanvas #fh5co-page {
-  -moz-transform: translateX(-240px);
-  -webkit-transform: translateX(-240px);
-  -ms-transform: translateX(-240px);
-  -o-transform: translateX(-240px);
-  transform: translateX(-240px);
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-menu-wrap {
-    display: none;
-  }
-}
-
-#offcanvas-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 99;
-  background: #222;
-  right: -240px;
-  width: 240px;
-  padding: 20px;
-  overflow-y: scroll !important;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  #offcanvas-menu {
-    display: block;
-  }
-}
-#offcanvas-menu ul {
-  padding: 0;
-  margin: 0;
-}
-#offcanvas-menu ul li {
-  padding: 0;
-  margin: 0 0 10px 0;
-  list-style: none;
-}
-#offcanvas-menu ul li a {
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.3);
-}
-#offcanvas-menu ul li a:hover {
-  color: rgba(0, 0, 0, 0.1);
-}
-#offcanvas-menu ul li > .fh5co-sub-menu {
-  margin-top: 9px;
-  padding-left: 20px;
-}
-#offcanvas-menu ul li.active > a {
-  color: #55bbff;
-}
-#offcanvas-menu ul .fh5co-sub-menu {
-  display: block !important;
 }
 
 .fh5co-nav-toggle {
@@ -1427,7 +1271,7 @@ figure {
 /* オリジナル追加css */
 
 .m-bottom {
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .contents-top {
@@ -1514,6 +1358,11 @@ figure {
 	position: relative;
 }
 
+.info-cd-in {
+	position: relative;
+	z-index: 10;
+}
+
 .info-cd:before {
 	position: absolute;
 	top: -1px;
@@ -1585,15 +1434,19 @@ figure {
 	margin-left: 62px;
 }
 
-.contents-share {
+.contents-movie {
 	width: 100%;
 	background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	background-color: rgb(255, 140, 230);
+	background-color: rgb(18, 216, 250);
 	background-blend-mode: multiply;
 	z-index: 5;
+}
+
+.contents-movie .movie-btn > a {
+	margin: 35px;
 }
 
 .alpha-box {
@@ -1628,7 +1481,7 @@ figure {
 }
 
 /* credit */
-.contents-section .head p:after, .credit-wrap:after {
+.contents-section .head p:after, .credit-wrap:after, .movie-btn:after {
 	content:"";
 	height:2px;
 	width:100%;
@@ -1729,4 +1582,5 @@ footer p {
 }
 .social-icons > a:hover {
  	color: rgba(255, 255, 255, 0.9);
+	transition: 0.2s;
 }
