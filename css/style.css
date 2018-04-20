@@ -123,17 +123,16 @@ transform: translateY(-20px) rotate(45deg);
 /* ---------- content_box ---------- */
 
 div.content_box {
-    width: 800px;
 	margin: 10px auto;
-    overflow: hidden;
 }
 
-svg {
-	width:60%
-}
-
-.title_logo {
+.top-logo {
+	width:100%;
+	height:90px;
 	margin-top: 90px;
+	background:url("/img/logo.png") no-repeat;
+	background-position:center;
+	-webkit-background-size:contain;
 }
 
 .playbutton-wrapper button {
@@ -286,7 +285,7 @@ a.sns  {
 	margin-bottom: 20px;
 }
 .discography_box>div>.art_box {
-	box-shadow: 5px 8px 40px #999;
+	box-shadow: 5px 5px 30px 1px rgb(0,0,0,0.3);
 	overflow: hidden;
 }
 .discography_box>div img{
