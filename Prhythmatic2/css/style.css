@@ -1283,34 +1283,24 @@ figure {
     margin: 0 auto;
     background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 	-webkit-filter: drop-shadow(3px 4px 1px rgba(0, 0, 0, 0.5));
     display: block;
     position: fixed;
     z-index: -2;
 }
-/*
 
-.top-miku {
-	overflow-x: hidden;
-	background:none;
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .top-miku {
+		 background-attachment: scroll !important;
+	 }
 }
 
-.top-miku::before {
-	content:"";
-	display:block;
-	position:fixed;
-	top:0;
-	left:0;
-	z-index:-1;
-	width:100%;
-	height:100vh;
-	background:url("../img/top_miku.png") center/cover no-repeat;
-	-webkit-background-size:cover;
+@media handheld, only screen and (max-width: 668px) {
+     .top-miku {
+		 background-attachment: scroll !important;
+	 }
 }
-*/
-
 
 #header-section {
 	background-color: rgba(255, 255, 255, 0.7);
@@ -1370,6 +1360,18 @@ figure {
 	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-info {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-info {
+		 background-attachment: scroll !important;
+	 }
 }
 
 .info-cd {
@@ -1462,6 +1464,19 @@ figure {
 	z-index: 5;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-movie {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-movie {
+		 background-attachment: scroll !important;
+	 }
+}
+
+
 .contents-movie .movie-btn > a {
 	margin: 35px;
 }
@@ -1515,6 +1530,18 @@ figure {
 	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-credit {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-credit {
+		 background-attachment: scroll !important;
+	 }
 }
 
 .credit-wrap > div {
