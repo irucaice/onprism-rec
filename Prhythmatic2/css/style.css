@@ -1290,9 +1290,7 @@ figure {
     z-index: -2;
 }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
      .top-miku {
 		 background-attachment: scroll !important;
 	 }
@@ -1362,6 +1360,18 @@ and (max-device-width : 1024px)  {
 	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-info {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-info {
+		 background-attachment: scroll !important;
+	 }
 }
 
 .info-cd {
@@ -1454,6 +1464,19 @@ and (max-device-width : 1024px)  {
 	z-index: 5;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-movie {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-movie {
+		 background-attachment: scroll !important;
+	 }
+}
+
+
 .contents-movie .movie-btn > a {
 	margin: 35px;
 }
@@ -1507,6 +1530,18 @@ and (max-device-width : 1024px)  {
 	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+     .contents-credit {
+		 background-attachment: scroll !important;
+	 }
+}
+
+@media handheld, only screen and (max-width: 668px) {
+     .contents-credit {
+		 background-attachment: scroll !important;
+	 }
 }
 
 .credit-wrap > div {
