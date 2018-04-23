@@ -1416,7 +1416,7 @@ figure {
 }
 
 .contents-track li {
-	width: calc(100% - 109px);
+	width: calc(100% - 30px);
 	margin-bottom: 12px;
 	padding: 0.6em 1.0em;
 	text-align: left;
@@ -1427,7 +1427,7 @@ figure {
 .contents-track li span {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 14%;
+	margin-right: 1%;
 }
 
 .contents-track li span:last-child {
@@ -1448,7 +1448,7 @@ figure {
 
 .contents-track li:nth-child(even) {
 	background-color: rgb(0, 159, 255, 0.8);
-	margin-left: 62px;
+	margin-left: 30px;
 }
 
 .contents-movie {
