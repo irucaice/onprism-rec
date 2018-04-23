@@ -1512,7 +1512,7 @@ figure {
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-	background-color: rgba(0, 159, 255);
+	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
 	z-index: 5;
 }
