@@ -1354,7 +1354,6 @@ figure {
     width: 100%;
 	background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 /*	background-color: rgba(18, 216, 250, 0.9);*/
 	background-color: rgb(0, 159, 255);
@@ -1457,7 +1456,6 @@ figure {
 	width: 100%;
 	background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 	background-color: rgb(18, 216, 250);
 	background-blend-mode: multiply;
@@ -1525,7 +1523,6 @@ figure {
     width: 100%;
 	background: url(../img/top_miku.png) no-repeat;
 	background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 	background-color: rgb(0, 159, 255);
 	background-blend-mode: multiply;
