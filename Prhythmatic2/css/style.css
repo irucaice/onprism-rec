@@ -266,7 +266,6 @@ figure {
   border-top: none;
   text-decoration: none;
   zoom: 1;
-  font-size: 16px;
   border-bottom: none !important;
 }
 .sf-menu a:hover, .sf-menu a:focus {
@@ -1452,6 +1451,10 @@ figure {
 	margin-left: 30px;
 }
 
+.lyrics-button {
+	padding: 20px 0 40px 0;
+}
+
 .contents-movie {
 	width: 100%;
 	background: url(../img/top_miku.png) no-repeat;
@@ -1588,13 +1591,21 @@ figure {
 }
 
 /* Lyrics - オリジナル追加css */
+#lyric-nav a {
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+}
 
-dl {
+.contents-track dl {
+	border-bottom: 1px solid #999;
+}
+
+.contents-info dl, .contents-movie dl {
 	border-bottom: 1px solid #fff;
 }
 
-div.lyrics {
-	background:radial-gradient(rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.4) 100%);
+div.lyrics p {
+	color: #444;
 }
 
 div.title-logo-lyrics img{

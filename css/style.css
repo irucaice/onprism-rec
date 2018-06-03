@@ -213,9 +213,10 @@ a.sns  {
 }
 /* ---------- News ---------- */
 .head {
-	font-size: 30px;
+	font-size: 24px;
 	font-weight: 200;
     line-height: 1.231;
+	letter-spacing: 0.11em;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -235,6 +236,9 @@ a.sns  {
 }
 
 /* ---------- about ---------- */
+.members {
+	letter-spacing: 0.1em;
+}
 .members .head:after {
 	margin-bottom: 40px;
 }
@@ -251,20 +255,46 @@ a.sns  {
 	margin-bottom: 10px;
 	display: block;
 }
+.fa-nico, .fa-nico::before {
+	position: relative;
+	height: 40px; 
+	width: 37px; 
+}
+.fa-nico-mini, .fa-nico-mini::before {
+	position: relative;
+	height: 23px; 
+	width: 27px; 
+}
+.fa-nico::before, .fa-nico-mini::before {
+	content:"";
+	position: absolute;
+	left: 0;
+	display:block;
+	background: url(/img/icon_nico.png) no-repeat;
+	background-size: contain;
+	/*Android4*/
+	-webkit-background-size : contain;
+}
+.fa-nico::before {
+	top: 7px;
+}
+.fa-nico-mini::before {
+	top: 1px;
+}
 .jisyo .member_name:after {
-		background:-webkit-gradient(linear, left top, right bottom, from(#ec008c), to(#fc6767));
-		background:-moz-linear-gradient(left, #ec008c, #fc6767);
-		background:linear-gradient(left, #ec008c, #fc6767);
+	background:-webkit-gradient(linear, left top, right bottom, from(#ec008c), to(#fc6767));
+	background:-moz-linear-gradient(left, #ec008c, #fc6767);
+	background:linear-gradient(left, #ec008c, #fc6767);
 }
 .irucaice .member_name:after {
-		background:-webkit-gradient(linear, left top, right bottom, from(#6A80ff), to(#86fde8));
-		background:-moz-linear-gradient(left, #6A80ff, #86fde8);
-		background:linear-gradient(left, #6A80ff, #86fde8);
+	background:-webkit-gradient(linear, left top, right bottom, from(#6A80ff), to(#86fde8));
+	background:-moz-linear-gradient(left, #6A80ff, #86fde8);
+	background:linear-gradient(left, #6A80ff, #86fde8);
 }
 .shuto .member_name:after {
-		background:-webkit-gradient(linear, left top, right bottom, from(#12d8fa), to(#ff008c));
-		background:-moz-linear-gradient(left, #ec008c, #fc6767);
-		background:linear-gradient(left, #ec008c, #fc6767);
+	background:-webkit-gradient(linear, left top, right bottom, from(#12d8fa), to(#ff008c));
+	background:-moz-linear-gradient(left, #ec008c, #fc6767);
+	background:linear-gradient(left, #ec008c, #fc6767);
 }
 .member_job {
 	margin-bottom: 10px;
@@ -277,7 +307,7 @@ a.sns  {
 	color: #3f4c6b;
 }
 .member_icon {
-	width: 100%;
+	width: 60%;
 	box-shadow: 3px 3px 20px #999;
 }
 /* ---------- release ---------- */
