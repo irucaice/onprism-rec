@@ -1305,7 +1305,7 @@ a.top-link-circle {
 .top-inner-circle {
 	width: 92%;
 	height: 92%;
-	border: solid 1.5px rgb(0, 159, 255);
+	border: solid 1.5px rgba(255, 170, 0);
 	border-radius: 50%;
 	position: relative;
 	top: 4%;
@@ -1521,7 +1521,7 @@ a.top-link-circle {
 }
 
 .contents-track li:nth-child(odd) {
-	background-color: rgba(255, 170, 0, 0.8);
+	background-color: rgba(170, 0, 220, 0.8);
 }
 
 .contents-track li:nth-child(even) {
@@ -1644,13 +1644,13 @@ a.top-link-circle {
 }
 
 .credit-wrap > .credit-music, .credit-wrap > .credit-movie {
-	width: 175px;
+	width: 181px;
 }
 .credit-wrap > .credit-design {
-	width: 300px;
+	width: 307px;
 }
 .credit-wrap > .credit-illust {
-	width: 335px;
+	width: 340px;
 }
 
 .credit-wrap ul {
