@@ -1261,12 +1261,12 @@ figure {
 }
 
 .top-logo {
-	width: 50%;
+	width: 40%;
 	max-width: 100%;
 	height: 100vh;
     margin: 0 auto;
-    left: 40%;
-    right: 60%;
+    left: 50%;
+    right: 50%;
     top: 250px;
     background: url(../img/top_logo.png) no-repeat;
 	background-size: contain;
@@ -1274,6 +1274,55 @@ figure {
     display: block;
     position: fixed;
     z-index: -1;
+}
+
+a.top-link-circle {
+	color: #ffffff;
+	z-index: 10;
+}
+
+.top-circle {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+    margin: 0 auto;
+    left: 10%;
+    right: 90%;
+    top: 60%;
+    background: #2f2f31;
+	mix-blend-mode: multiply;
+	-webkit-filter: drop-shadow(0 0 10px #ffffff);
+    display: block;
+    position: fixed;
+}
+
+.top-circle:hover {
+	background: #303090;
+	transition: 0.4s;
+}
+
+
+.top-inner-circle {
+	width: 92%;
+	height: 92%;
+	border: solid 1.5px rgba(255, 170, 0);
+	border-radius: 50%;
+	position: relative;
+	top: 4%;
+	left: 4%;
+}
+
+.top-circle span {
+	position: absolute;
+	display: inline-block;
+	left: 10%;
+	top: 52%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 80%;
+	font-size: 88%;
+	text-align: center;
 }
 
 .top-miku {
@@ -1291,7 +1340,7 @@ figure {
     z-index: -2;
 }
 
-.top-circle {
+.top-back-circle {
 	width: 100vw;
 	height: 100vh;
     margin: 0 auto;
@@ -1471,7 +1520,7 @@ figure {
 	font-size: 0.75em;
 }
 
-.contents-track li:nth-child(odd) {	
+.contents-track li:nth-child(odd) {
 	background-color: rgba(255, 170, 0, 0.8);
 }
 
