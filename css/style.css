@@ -211,6 +211,13 @@ a.sns  {
 .sns>.fa-youtube:hover{
 	color: #901010;
 }
+.sns>.fa-soundcloud {
+	color: #ff7700;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-soundcloud:hover{
+	color: #dd6f00;
+}
 /* ---------- News ---------- */
 .head {
 	font-size: 24px;
