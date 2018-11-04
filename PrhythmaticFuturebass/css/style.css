@@ -1711,7 +1711,7 @@ div.title-logo-lyrics img{
 	padding: 30px;
 }
 
-.contents-lyrics:nth-child(3n) * {
+.contents-lyrics:nth-child(3n) p, .contents-lyrics:nth-child(3n) .lyrics {
 	color: #444;
 }
 
