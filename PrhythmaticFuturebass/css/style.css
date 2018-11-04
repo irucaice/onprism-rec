@@ -1711,18 +1711,18 @@ div.title-logo-lyrics img{
 	padding: 30px;
 }
 
-.contents-lyrics:nth-child(3n) * {
+.contents-lyrics:nth-child(3n) p, .contents-lyrics:nth-child(3n) .lyrics {
 	color: #444;
 }
 
 .contents-lyrics:nth-child(3n+1) {
 	color: white;
-	background: linear-gradient(to bottom right, rgb(255, 10, 50, 0.6), rgb(255, 143, 250, 0.6)); 
+	background: linear-gradient(to bottom right, rgba(255, 10, 50, 0.6), rgba(255, 143, 250, 0.6)); 
 }
 
 .contents-lyrics:nth-child(3n+2) {
 	color: white;
-	background: linear-gradient(to bottom right, rgb(50, 30, 250, 0.6), rgb(50, 180, 255, 0.5)); 
+	background: linear-gradient(to bottom right, rgba(50, 30, 250, 0.6), rgba(50, 180, 255, 0.5)); 
 }
 
 footer {
