@@ -1687,24 +1687,42 @@ a.top-link-circle {
 	letter-spacing: 0.1em;
 }
 
-.contents-track dl {
-	border-bottom: 1px solid #999;
-}
-
-.contents-info dl, .contents-movie dl {
-	border-bottom: 1px solid #fff;
-}
-
-div.lyrics p {
-	color: #444;
-}
-
 div.title-logo-lyrics img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
 	margin-bottom: 70px;
+}
+
+.contents-lyrics dl {
+	border-bottom: 1px solid #fff;
+}
+
+.contents-lyrics:nth-child(3n) dl {
+	border-color: #444;
+}
+
+.contents-info dl, .contents-movie dl {
+	border-bottom: 1px solid #fff;
+}
+
+.contents-lyrics {
+	padding: 30px;
+}
+
+.contents-lyrics:nth-child(3n) * {
+	color: #444;
+}
+
+.contents-lyrics:nth-child(3n+1) {
+	color: white;
+	background-color: rgb(160, 5, 10, 0.76);
+}
+
+.contents-lyrics:nth-child(3n+2) {
+	color: white;
+	background-color: rgb(0, 0, 0, 0.7);
 }
 
 footer {
