@@ -317,6 +317,10 @@ a.sns  {
 	width: 60%;
 	box-shadow: 3px 3px 20px #999;
 }
+.member_icon_director {
+	width: 30%;
+	box-shadow: 3px 3px 20px #999;
+}
 /* ---------- release ---------- */
 .discography_box>div {
 	margin-bottom: 20px;
