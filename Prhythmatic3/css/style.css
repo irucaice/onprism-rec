@@ -1664,6 +1664,10 @@ figure {
 }
 
 /* Lyrics - オリジナル追加css */
+#lyrics .contents-title {
+		background-color: #51d2e3;
+}
+
 #lyric-nav a {
 	font-size: 0.7em;
 	letter-spacing: 0.1em;
@@ -1674,15 +1678,11 @@ div.title-logo-lyrics img{
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
-	margin-bottom: 70px;
+	padding: 50px;
 }
 
 .contents-lyrics dl {
 	border-bottom: 1px solid #fff;
-}
-
-.contents-lyrics:nth-child(3n) dl {
-	border-color: #444;
 }
 
 .contents-info dl, .contents-movie dl {
@@ -1693,18 +1693,37 @@ div.title-logo-lyrics img{
 	padding: 30px;
 }
 
-.contents-lyrics:nth-child(3n) p, .contents-lyrics:nth-child(3n) .lyrics {
+.contents-lyrics:nth-child(5n) {
+	color: white;
+	background: #2ebfd2;
+}
+
+.contents-lyrics:nth-child(5n+1) {
+	color: white;
+	background: #238bdc;
+}
+
+.contents-lyrics:nth-child(5n+2) {
+	color: #444;
+	background: #eeefa2;
+}
+
+.contents-lyrics:nth-child(5n+2) p {
 	color: #444;
 }
 
-.contents-lyrics:nth-child(3n+1) {
-	color: white;
-	background: linear-gradient(to bottom right, rgba(255, 10, 50, 0.6), rgba(255, 143, 250, 0.6)); 
+.contents-lyrics:nth-child(5n+2) dl {
+	border-color: #444;
 }
 
-.contents-lyrics:nth-child(3n+2) {
+.contents-lyrics:nth-child(5n+3) {
 	color: white;
-	background: linear-gradient(to bottom right, rgba(50, 30, 250, 0.6), rgba(50, 180, 255, 0.5)); 
+	background: #2fbdef;
+}
+
+.contents-lyrics:nth-child(5n+4) {
+	color: white;
+	background: #f3a6e2;
 }
 
 footer {
