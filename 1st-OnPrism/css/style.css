@@ -1550,6 +1550,10 @@ figure {
 	overflow: hidden;
 }
 
+#store {
+  margin-bottom: 50px;
+}
+
 #spec-table a {
 	color: rgba(255, 255, 255, 0.7);
 	text-decoration: underline;
