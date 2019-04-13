@@ -201,14 +201,14 @@ a.sns  {
 	color: #66CCFF;
 	transition: color 0.3s ease 0s;
 }
-.sns>.fa-twitter:hover{
+.sns>.fa-twitter:hover {
 	color: #55acee;
 }
 .sns>.fa-youtube {
 	color: #e52d27;
 	transition: color 0.3s ease 0s;
 }
-.sns>.fa-youtube:hover{
+.sns>.fa-youtube:hover {
 	color: #901010;
 }
 .sns>.fa-soundcloud {
@@ -217,6 +217,27 @@ a.sns  {
 }
 .sns>.fa-soundcloud:hover{
 	color: #dd6f00;
+}
+.sns>.fa-instagram {
+	color: #CF2E92;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-instagram:hover {
+	color: #4C64D3;
+}
+.sns>.fa-spotify {
+	color: #1ED760;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-spotify:hover {
+	color: #60a000;
+}
+.sns>.fa-archive {
+	color: #238bdc;
+	transition: color 0.3s ease 0s;
+}
+.sns>.fa-archive:hover {
+	color: #1070a0;
 }
 /* ---------- News ---------- */
 .head {
