@@ -36,12 +36,11 @@ body {
 
 body::before {
   background: url("../img/back_pattern.png")repeat;
-  margin: 70px;
   content: "";
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 50px;
   z-index: -5;
   width: 90%;
   height: 86vh;
@@ -1020,7 +1019,7 @@ figure {
   transition: 0.3s;
 }
 .btn.btn-primary {
-	width: inherit;
+  width: inherit;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border: none !important;
@@ -1323,6 +1322,36 @@ figure {
   z-index: -4;
 }
 
+.top-obj1 {
+  width: 6%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  left: 90%;
+  right: 10%;
+  top: 100px;
+  background: url(../img/obj1.png) no-repeat;
+  background-size: contain;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
+.top-obj2 {
+  width: 11%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  left: 10%;
+  right: 90%;
+  top: 550px;
+  background: url(../img/obj2.png) no-repeat;
+  background-size: contain;
+  display: block;
+  position: fixed;
+  z-index: -1;
+}
+
 @media only screen and (min-device-width : 668px) and (max-device-width : 1024px)  {
 	.top-miku {
 		 background-attachment: scroll !important;
@@ -1409,8 +1438,6 @@ figure {
 @media handheld, only screen and (max-width: 668px) {
      .contents-info {
 		 background-attachment: scroll !important;
-		 background-size: 190%;
-		 background-position: right -10%;
 	 }
 }
 
@@ -1459,6 +1486,10 @@ figure {
 .store-block .btn-store {
 	width: 210px;
 	display: inline;
+}
+
+.btn-store .btn {
+  margin-bottom: 20px;
 }
 
 .contents-track {
