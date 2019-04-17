@@ -1325,13 +1325,13 @@ figure {
 }
 
 @media only screen and (min-device-width : 668px) and (max-device-width : 1024px)  {
-	.top-miku {
+	.top-miku, .top-back-circle {
 		 background-attachment: scroll !important;
 	 }
 }
 
 @media handheld, only screen and (max-width: 668px) {
-	.top-miku {
+	.top-miku, .top-back-circle {
 		 background-attachment: scroll !important;
          top: 100px;
 	 }
