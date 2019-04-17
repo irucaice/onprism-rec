@@ -1297,7 +1297,7 @@ figure {
   max-width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-image : url(../img/top_miku.png);
+  background-image: url(../img/top_miku.png);
   background-repeat:  no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -1313,7 +1313,8 @@ figure {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background: url(../img/back_circle.png) no-repeat;
+  background-image: url(../img/back_circle.png);
+  background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
   background-position: 50% 40px;
@@ -1327,8 +1328,6 @@ figure {
 	.top-miku {
 		 background-attachment: scroll !important;
 	 }
-	.top-logo {
-	}
 }
 
 @media handheld, only screen and (max-width: 668px) {
@@ -1337,7 +1336,7 @@ figure {
          top: 100px;
 	 }
 	.top-logo {
-		top: 30%; !important;
+		top: 70%; !important;
 	}
 }
 
@@ -1414,6 +1413,13 @@ figure {
 	padding: 50px;
 	margin: 20px 0;
 	position: relative;
+}
+
+@media handheld, only screen and (max-width: 700px) {
+  .info-cd {
+    padding: 20px;
+    font-size: 0.85em;
+  }
 }
 
 .info-cd-in {
@@ -1502,9 +1508,15 @@ figure {
 	.contents-track li {
 		height: 60px;
 	}
-	.contents-track li:nth-child(6) {
-			font-size: 0.85em;
+	.contents-track {
+        font-size: 0.85em;
 	}
+    .contents-track li:nth-child(9), .contents-track li:nth-child(10) {
+        font-size: 0.75em;
+    }
+    .track-sub {
+        font-size: 0.5em;
+    }
 }
 
 /* youtube SP */
