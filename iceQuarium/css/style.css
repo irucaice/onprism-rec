@@ -1589,6 +1589,12 @@ figure {
 	overflow: hidden;
 }
 
+@media only screen and (min-device-width : 668px) {
+  .goods-4 {
+    margin-top: 50px;
+  }
+}
+
 /* credit */
 h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after {
 	content:"";
