@@ -336,18 +336,18 @@ a.sns  {
 }
 .member_icon {
 	width: 60%;
-	box-shadow: 3px 3px 20px #999;
+	box-shadow: 2px 2px 10px #999;
 }
 .member_icon_director {
 	width: 30%;
-	box-shadow: 3px 3px 20px #999;
+	box-shadow: 2px 2px 10px #999;
 }
 /* ---------- release ---------- */
 .discography_box>div {
 	margin-bottom: 20px;
 }
 .discography_box>div>.art_box {
-	box-shadow: 5px 5px 30px 1px rgb(0,0,0,0.3);
+	box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
 .discography_box>div img{
