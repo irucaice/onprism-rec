@@ -1453,6 +1453,10 @@ figure {
 	display: inline;
 }
 
+.btn-store .btn {
+  margin-bottom: 20px;
+}
+
 .contents-track {
 	width: 100%;
 	color: rgb(70, 70, 70);
