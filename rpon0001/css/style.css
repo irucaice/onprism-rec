@@ -32,6 +32,7 @@ body {
 /*	オリジナル*/
 	line-height: 1.7;
     letter-spacing: 0.15em;
+    overflow-y: scroll;
 }
 
 body::before {
@@ -1261,8 +1262,62 @@ figure {
 
 /* オリジナル追加css */
 
+/* ---------- loading ---------- */
+.animation_load {
+    background-color: #010311;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+
+.animation_load::before {
+    content: "Pardalote";
+    font-size: 120px;
+    display: block;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    animation: blur 1s;
+}
+
+.top-logo {
+  font-size: 120px;
+  display: block;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
 .m-bottom {
 	margin-bottom: 50px;
+}
+
+#particles-js {
+    z-index: -3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
 }
 
 .contents-top {
@@ -1271,21 +1326,6 @@ figure {
   min-width: 1000px;
   min-height: 1000px;
   position: relative;
-}
-
-.top-logo {
-  width: 80%;
-  max-width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  left: 10%;
-  right: 90%;
-  top: 400px;
-  background: url(../img/top_logo.png) no-repeat;
-  background-size: contain;
-  display: block;
-  position: fixed;
-  z-index: -1;
 }
 
 .top-miku {
@@ -1303,37 +1343,37 @@ figure {
   position: fixed;
   top: 0;
   z-index: -2;
+  animation: fluffy 5s ease-in-out infinite alternate;
 }
 
-.top-back-circle {
-  width: 100vw;
-  height: 100vh;
-  margin: 0 auto;
-  background-image: url(../img/back_circle.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: 50% 40px;
-  display: block;
-  position: fixed;
-  top: 0;
-  z-index: -4;
+@keyframes fluffy {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
 }
 
 @media only screen and (min-device-width : 668px) and (max-device-width : 1024px)  {
-	.top-miku, .top-back-circle {
+	.top-miku {
 		 background-attachment: scroll !important;
 	 }
 }
 
 @media handheld, only screen and (max-width: 668px) {
-	.top-miku, .top-back-circle {
-		 background-attachment: scroll !important;
-         top: 100px;
+	.top-miku {
+        background-attachment: scroll !important;
+        background-size: 1200px;
+        background-position: -430px -50px;
+        top: 0;
 	 }
 	.top-logo {
-		top: 70%; !important;
+		font-size: 70px !important;
 	}
+    .animation_load::before {
+        font-size: 70px !important;
+    }
 }
 
 
@@ -1403,6 +1443,17 @@ figure {
 	 }
 }
 
+#logo .logo {
+    width: 350px;
+    margin: auto;
+}
+
+.logo-riparia:after {
+    content: "×";
+    height: 33px;
+    display: block;
+}
+
 .info-cd {
     background-color: rgba(0, 0, 0, 0.4);
 	height: 100%;
@@ -1443,8 +1494,9 @@ figure {
 	content: "";
 }
 
-.cd_info_list {
+ul.cd_info_list {
     list-style: none;
+    padding: 0;
 }
 
 li.info_list_item {
@@ -1625,7 +1677,7 @@ li.info_list_item {
 }
 
 /* credit */
-h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after {
+#logo:after, h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after {
 	content:"";
 	height:2px;
 	width:100%;
@@ -1654,17 +1706,22 @@ h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after 
 	display: flex;
 }
 
-.credit-wrap > .credit-music, .credit-wrap > .credit-movie {
-	width: 212px;
+.credit-wrap > .credit-music {
+	width: 246px;
+    margin-left: calc(50% - 70px);
 }
 .credit-wrap > .credit-illust {
-	width: 375px;
+	width: 325px;
 }
-.credit-wrap > .credit-remixer {
-	width: 242px;
+.credit-wrap > .credit-design {
+    width: 178px;
 }
 .credit-wrap > .credit-mastering {
-	width: 323px;
+	width: 265px;
+}
+.credit-wrap > .credit-produce {
+    width: 310px;
+    margin-left: calc(50% - 107px);
 }
 
 .credit-wrap ul {
@@ -1763,7 +1820,7 @@ div.title-logo-lyrics img{
 
 footer {
   padding: 40px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.95);
 }
 footer p {
   color: white;
