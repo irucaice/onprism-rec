@@ -1756,8 +1756,9 @@ li.info_list_item {
 }
 
 /* lyrics - オリジナル追加css */
-#lyrics .contents-title {
-    background-color: #51d2e3;
+#lyrics {
+    font-family: 'Noto Serif JP', serif;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #lyric-nav a {
@@ -1783,39 +1784,6 @@ div.title-logo-lyrics img{
 
 .contents-lyrics {
 	padding: 30px;
-}
-
-.contents-lyrics:nth-child(5n) {
-	color: white;
-	background: #2ebfd2;
-}
-
-.contents-lyrics:nth-child(5n+1) {
-	color: white;
-	background: #238bdc;
-}
-
-.contents-lyrics:nth-child(5n+2) {
-	color: #444;
-	background: #eeefa2;
-}
-
-.contents-lyrics:nth-child(5n+2) p {
-	color: #444;
-}
-
-.contents-lyrics:nth-child(5n+2) dl {
-	border-color: #444;
-}
-
-.contents-lyrics:nth-child(5n+3) {
-	color: white;
-	background: #2fbdef;
-}
-
-.contents-lyrics:nth-child(5n+4) {
-	color: white;
-	background: #f3a6e2;
 }
 
 footer {
