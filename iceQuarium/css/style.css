@@ -14,7 +14,7 @@ rgb(22, 144, 154)
 **/
 
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'Noto Serif JP', serif;
   src: url("/fonts/icomoon/icomoon.eot?srf3rx");
   src: url("/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
@@ -22,7 +22,7 @@ rgb(22, 144, 154)
 }
 
 body {
-	font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Noto Serif JP', "Open Sans", Arial, sans-serif;
 	line-height: 1.6;
 	font-size: 16px;
 	color: #FFF;
@@ -64,12 +64,10 @@ p, ul, ol {
   margin-bottom: 1.5em;
   font-size: 16px;
   color: #FFF;
-  font-family: "Open Sans", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -380,7 +378,6 @@ figure {
 }
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
-  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -404,7 +401,6 @@ figure {
 }
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
-  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1269,6 +1265,15 @@ figure {
 	margin-bottom: 50px;
 }
 
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -3;
+}
+
 .contents-top {
   width: 100%;
   height: 100%;
@@ -1307,6 +1312,16 @@ figure {
   position: fixed;
   top: 0;
   z-index: -2;
+  animation: fluffy 5s ease-in-out infinite alternate;
+}
+
+@keyframes fluffy {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .top-back-circle {
@@ -1389,6 +1404,7 @@ figure {
 .contents-section {
 	padding-top: 50px;
 	padding-bottom: 50px;
+    background: rgba(0, 0, 10, 0.8);
 }
 
 .contents-info {
@@ -1580,6 +1596,7 @@ figure {
 .contents-goods {
 	width: 100%;
 	color: #fff;
+    padding: 25px 14%;
 }
 
 
@@ -1606,7 +1623,6 @@ h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after 
 
 .contents-credit {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (min-device-width : 668px) and (max-device-width : 1024px)  {
@@ -1670,67 +1686,35 @@ h4:after, .contents-section .head p:after, .credit-wrap:after, .movie-btn:after 
 	transition: 0.2s;
 }
 
-/* Lyrics - オリジナル追加css */
-#lyrics .contents-title {
-    background-color: #51d2e3;
+/* lyrics - オリジナル追加css */
+#lyrics {
+  font-family: 'Noto Serif JP', serif;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #lyric-nav a {
-	font-size: 0.7em;
-	letter-spacing: 0.1em;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
 }
 
 div.title-logo-lyrics img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 600px;
-	padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding: 50px;
 }
 
 .contents-lyrics dl {
-	border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .contents-info dl, .contents-movie dl {
-	border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .contents-lyrics {
-	padding: 30px;
-}
-
-.contents-lyrics:nth-child(5n) {
-	color: white;
-	background: #2ebfd2;
-}
-
-.contents-lyrics:nth-child(5n+1) {
-	color: white;
-	background: #238bdc;
-}
-
-.contents-lyrics:nth-child(5n+2) {
-	color: #444;
-	background: #eeefa2;
-}
-
-.contents-lyrics:nth-child(5n+2) p {
-	color: #444;
-}
-
-.contents-lyrics:nth-child(5n+2) dl {
-	border-color: #444;
-}
-
-.contents-lyrics:nth-child(5n+3) {
-	color: white;
-	background: #2fbdef;
-}
-
-.contents-lyrics:nth-child(5n+4) {
-	color: white;
-	background: #f3a6e2;
+  padding: 30px;
 }
 
 footer {

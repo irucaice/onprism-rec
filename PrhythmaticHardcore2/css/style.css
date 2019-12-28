@@ -1785,6 +1785,15 @@ div.title-logo-lyrics img{
 	padding: 30px;
 }
 
+@media handheld, only screen and (max-width: 668px) {
+  .container {
+    padding: 5px !important;
+  }
+  .contents-lyrics {
+    padding: 10px;
+  }
+}
+
 footer {
   padding: 40px;
 }
