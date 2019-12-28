@@ -1727,10 +1727,20 @@ div.title-logo-lyrics img{
 
 .contents-lyrics p {
 	color: #444;
+    font-size: 0.85em;
 }
 
 .contents-lyrics dl {
 	border-color: #444;
+}
+
+@media handheld, only screen and (max-width: 668px) {
+  .container {
+    padding: 5px !important;
+  }
+  .contents-lyrics {
+    padding: 10px;
+  }
 }
 
 footer {

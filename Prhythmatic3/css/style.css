@@ -1696,6 +1696,9 @@ div.title-logo-lyrics img{
 .contents-lyrics {
 	padding: 30px;
 }
+.contents-lyrics p {
+  font-size: 0.85em;
+}
 
 .contents-lyrics:nth-child(5n) {
 	color: white;
@@ -1728,6 +1731,15 @@ div.title-logo-lyrics img{
 .contents-lyrics:nth-child(5n+4) {
 	color: white;
 	background: #f3a6e2;
+}
+
+@media handheld, only screen and (max-width: 668px) {
+  .container {
+    padding: 5px !important;
+  }
+  .contents-lyrics {
+    padding: 10px;
+  }
 }
 
 footer {
