@@ -36,7 +36,7 @@ body {
 }
 
 body::before {
-  background:url("../_nuxt/img/6b8a64d.svg") center/cover no-repeat; /*fixedをトル！*/
+  background:url("../_nuxt/img/87eb84b.svg") center/cover no-repeat; /*fixedをトル！*/
   -webkit-background-size:cover;/*Android4*/
   content: "";
   display: block;
