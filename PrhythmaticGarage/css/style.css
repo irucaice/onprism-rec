@@ -1,0 +1,276 @@
+/**
+key color
+rgb(140, 214, 215)
+#8CD6D7
+pink
+#FF2E6D
+rgb(255, 46, 109)
+yellow
+#FFF011
+rgb(255, 240, 17)
+dark green
+#16909A
+rgb(22, 144, 154)
+**/
+
+@font-face {
+  font-family: 'Noto Serif JP', serif;
+  src: url("/fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("/fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("/fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("/fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("/fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: 'Noto Serif JP', "Open Sans", Arial, sans-serif;
+	line-height: 1.6;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: 300;
+	overflow-x: hidden;
+/*	オリジナル*/
+    background-color: #F8F800;
+	line-height: 1.7;
+    letter-spacing: 0.15em;
+    overflow-y: scroll;
+}
+
+body::before {
+  background:url("../_nuxt/img/33b8210.png") center/cover no-repeat; /*fixedをトル！*/
+  -webkit-background-size:cover;/*Android4*/
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: -5;
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  color: #55bbff;
+  -webkit-transition: 0.5s, ease;
+  -o-transition: 0.5s, ease;
+  transition: 0.5s, ease;
+}
+a:hover {
+  text-decoration: none;
+  color: #55bbff;
+}
+
+p, ul, ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+figure {
+  margin-bottom: 2em;
+}
+
+::-webkit-selection {
+  color: #fcfcfc;
+  background: #55bbff;
+}
+
+::-moz-selection {
+  color: #fcfcfc;
+  background: #55bbff;
+}
+
+::selection {
+  color: #fcfcfc;
+  background: #55bbff;
+}
+
+.site-header.has-image #primary-menu .sub-menu {
+  border-color: #ebebeb;
+  -webkit-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
+  -ms-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
+  -o-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
+}
+.site-header.has-image #primary-menu .sub-menu:before {
+  display: none;
+}
+
+.btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn {
+  letter-spacing: 2px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  width: inherit;
+  background: rgba(255, 255, 255, 0.8);
+  color: #707070;
+  border: none !important;
+  border: 2px solid transparent !important;
+  border-radius: 0;
+}
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+  box-shadow: none;
+  background: rgba(40, 40, 40, 0.8);
+  color: #aaaaaa !important;
+}
+.btn:hover, .btn:active, .btn:focus {
+  background: rgba(255,255,255,0.3); !important;
+  color: #aaaaaa;
+  outline: none !important;
+}
+.btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  border-color: transparent;
+}
+
+.js .animate-box {
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.lead {
+  line-height: 1.8;
+}
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* オリジナル追加css */
+.m-bottom {
+	margin-bottom: 50px;
+}
+
+.head-logo {
+  position: relative;
+  z-index: 2;
+  font-size: 22px;
+  margin-top: 35px;
+  font-weight: 700;
+  float: left;
+}
+
+.head-logo > a {
+  color: rgba(70, 70, 70, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .head-logo {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+.contents-section {
+	padding-top: 50px;
+	padding-bottom: 50px;
+    background: rgba(0, 0, 10, 0.9);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#logo .logo {
+    width: 350px;
+    margin: auto;
+}
+
+.f25 {
+    font-size: 25px;
+}
+
+.f40 {
+    font-size: 40px;
+}
+
+/* lyrics - オリジナル追加css */
+#lyrics, #lyrics p {
+    color: #000;
+}
+
+#lyric-nav a {
+	font-size: 0.7em;
+	letter-spacing: 0.1em;
+}
+
+div.title-logo-lyrics img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	padding: 50px;
+}
+
+.contents-lyrics .lyrics {
+    background-color: #fff;
+}
+
+
+.contents-lyrics dl {
+	border-bottom: 1px solid #202020;
+}
+
+.contents-lyrics {
+	padding: 30px;
+    color: #000;
+}
+
+@media handheld, only screen and (max-width: 668px) {
+  .container {
+    padding: 5px !important;
+  }
+  .contents-lyrics {
+    padding: 10px;
+  }
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+}
+footer p {
+  color: #000;;
+  font-size: 14px;
+}
+.social-icons {
+	margin: 20px;
+}
+.social-icons > a {
+	color: rgba(20, 20, 20, 0.5);
+ 	font-size: 26px;
+	padding: 4px 10px;
+}
+.social-icons > a:hover {
+ 	color: rgba(20, 20, 20, 0.9);
+	transition: 0.2s;
+}
